@@ -1,2 +1,0 @@
-# hcsmgzs
-hcsmgzs.github.io

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浩晨数码工作室 | Windows系统镜像&优化工具资源下载站</title>
+    <!-- 引入Bootstrap样式 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 图标库 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* 内置科技深空背景图片，已经填入在线图片地址，直接生效 */
+        body {
+            background: #12141a;
+            background-image: url('https://img0.baidu.com/it/u=1819357229,3827881797&fm=253&fmt=auto&app=138&f=JPEG?w=1920&h=1080');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: #e8e8e8;
+        }
+        /* 顶部导航栏样式 */
+        .header-nav {
+            background-color: rgba(20, 25, 35, 0.85);
+            backdrop-filter: blur(8px);
+            box-shadow: 0 2px 12px #00000040;
+        }
+        /* 卡片通用样式，磨砂玻璃质感 */
+        .glass-card {
+            background-color: rgba(28, 32, 42, 0.72);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(80, 140, 255, 0.2);
+            border-radius: 14px;
+            transition: all 0.35s ease;
+        }
+        .glass-card:hover {
+            border-color: rgba(80, 140, 255, 0.55);
+            transform: translateY(-6px);
+            box-shadow: 0 10px 30px rgba(45, 110, 230, 0.18);
+        }
+        /* 下载按钮样式 */
+        .download-btn {
+            background: linear-gradient(135deg,#296bff,#0e98ff);
+            border: none;
+            border-radius: 8px;
+            padding: 8px 18px;
+            color: #fff;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+        .download-btn:hover {
+            background: linear-gradient(135deg,#0e98ff,#296bff);
+            box-shadow: 0 0 15px #296bff66;
+            color: #ffffff;
+        }
+        /* 悬浮客服侧边按钮 */
+        .float-contact {
+            position: fixed;
+            right: 22px;
+            bottom: 35px;
+            z-index: 999;
+        }
+        .float-btn {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background-color: #296bff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 22px;
+            box-shadow: 0 4px 18px #296bff70;
+            cursor: pointer;
+        }
+        .float-btn:hover{
+            box-shadow: 0 0 20px #296bff;
+        }
+        /* 底部区域 */
+        .footer-area {
+            background-color: rgba(15, 18, 26, 0.9);
+            backdrop-filter: blur(6px);
+        }
+        /* 标题蓝色高亮 */
+        .blue-title {
+            color: #4898ff;
+        }
+    </style>
+</head>
+<body>
+<!-- 顶部导航栏 -->
+<nav class="header-nav navbar navbar-expand-lg navbar-dark sticky-top px-lg-5 px-3 py-3">
+    <div class="container">
+        <a class="navbar-brand fs-3 fw-bold blue-title" href=" ">
+            <i class="bi bi-windows me-2"></i>浩晨数码工作室
+        </a >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto gap-lg-4 gap-2">
+                <li class="nav-item"><a class="nav-link active" href="#home">首页</a ></li>
+                <li class="nav-item"><a class="nav-link" href="#windows">Windows镜像</a ></li>
+                <li class="nav-item"><a class="nav-link" href="#tools">系统优化工具</a ></li>
+                <li class="nav-item"><a class="nav-link" href="#notice">站点公告</a ></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">联系方式</a ></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- 首页横幅 -->
+<section id="home" class="container mt-5">
+    <div class="glass-card p-5 text-center">
+        <h2 class="fw-bold mb-3 blue-title">浩晨数码资源下载中心</h2>
+        <p class="fs-5 text-secondary mb-4">专注纯净原版Windows系统镜像、系统精简优化工具、装机驱动全套资源分享 | 系统调试、电脑维护定制服务</p >
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="#windows" class="download-btn">
+                <i class="bi bi-cloud-download-fill me-1"></i>进入镜像下载
+            </a >
+            <a href="#contact" class="btn btn-outline-primary rounded-8 text-white">商务咨询装机定制</a >
+        </div>
+    </div>
+</section>
+
+<!-- Windows镜像下载板块 -->
+<section id="windows" class="container mt-5">
+    <h3 class="fw-bold mb-4 blue-title"><i class="bi bi-windows me-2"></i>Windows全系系统镜像专区</h3>
+    <div class="row g-4">
+        <!-- Win11镜像卡片 -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="glass-card p-4 h-100">
+                <h5 class="fw-bold">Windows11 LTSC 纯净原版镜像</h5>
+                <p class="text-secondary small mt-2">原版官方ISO、精简优化版、企业长期服务版，64位，预装常用驱动，无捆绑广告</p >
+                <div class="mt-auto pt-3">
+                    <a href="https://pan.baidu.com/s/1WM0Rj35l2bkq3jMvmAWX0A?pwd=msdn" class="download-btn w-100 d-block text-center">下载资源</a >
+                </div>
+            </div>
+        </div>
+        <!-- Win10镜像卡片 -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="glass-card p-4 h-100">
+                <h5 class="fw-bold">Windows10 22H2</h5>
+                <p class="text-secondary small mt-2">专业版、家庭版、企业LTSC长期支持版，装机最稳定版本，适合办公游戏主机</p >
+                <div class="mt-auto pt-3">
+                    <a href="https://pan.baidu.com/s/1szhdmIp9rOCHeLjSnZJPSg?pwd=msdn" class="download-btn w-100 d-block text-center">下载资源</a >
+                </div>
+            </div>
+        </div>
+           
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="glass-card p-4 h-100">
+                <h5 class="fw-bold">Windows10 21H2</h5>
+                <p class="text-secondary small mt-2">专业版、家庭版、企业LTSC长期支持版，装机最稳定版本，适合办公游戏主机</p >
+                <div class="mt-auto pt-3">
+                    <a href="https://pan.baidu.com/s/19Goq5-UCQMxLZBw01Z8qGg?pwd=msdn" class="download-btn w-100 d-block text-center">下载资源</a >
+                </div>
+            </div>
+        </div>     
+<!-- Win7镜像卡片 -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="glass-card p-4 h-100">
+                <h5 class="fw-bold">Windows7 旗舰纯净版</h5>
+                <p class="text-secondary small mt-2">适用新/老电脑，</p >
+                <div class="mt-auto pt-3">
+                    <a href="https://pan.baidu.com/s/14LiNVfS2C8rB1PzX16Erkg?pwd=msdn" class="download-btn w-100 d-block text-center">下载资源</a >
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 阿宏搞数码开箱过的镜像下载板块 -->
+<section id="windows" class="container mt-5">
+    <h3 class="fw-bold mb-4 blue-title"><i class="bi bi-windows me-2"></i>阿宏搞数码开箱过的镜像专区</h3>
+    <div class="row g-4">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="glass-card p-4 h-100">
+                <h5>阿宏的镜像库</h5>
+                <p class="text-secondary small">开箱系统系列所有镜像都在这，密码0121</p >
+                <div class="mt-auto pt-3">
+                    <a href="https://1815468528.share.123pan.cn/123pan/PasiVv-VSkrv?notoken=1" class="download-btn w-100 d-block text-center">下载</a >
+                </div>
+            </div>
+        </div>
+
+<!-- 系统优化工具板块 -->
+<section id="tools" class="container mt-5">
+<h3 class="fw-bold mb-4 blue-title"><i class="bi bi-windows me-2"></i>系统优化工具</h3>
+    <div class="row g-4">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="glass-card p-4 h-100">
+                <h5>PE启动盘制作工具</h5>
+                <p class="text-secondary small">纯净无捆绑PE，硬盘分区、系统重装、数据恢复工具</p >
+                <div class="mt-auto pt-3">
+                    <a href="https://www.sysceo.com/software-softwarei-id-121.html" class="download-btn w-100 d-block text-center">下载</a >
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="glass-card p-4 h-100">
+                <h5>驱动一键安装包</h5>
+                <p class="text-secondary small">显卡、声卡、网卡离线驱动包，断网也可安装驱动</p >
+                <div class="mt-auto pt-3">
+                    <a href="https://www.sysceo.com/software-softwarei-id-123.html" class="download-btn w-100 d-block text-center">下载</a >
+                </div>
+            </div>
+        </div>
+
+<!-- 常用软件板块 -->
+<section id="tools" class="container mt-5">
+<h3 class="fw-bold mb-4 blue-title"><i class="bi bi-windows me-2"></i>系统优化工具</h3>
+    <div class="row g-4">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="glass-card p-4 h-100">
+                <h5>伽卡他卡电子教室教师端</h5>
+                <p class="text-secondary small">学校微机房控制软件</p >
+                <div class="mt-auto pt-3">
+                    <a href="https://download.ihsdus.cn/down/2025down/7/16/netclass_teacher_v17.8.exe?timestamp=6a6700d7&auth_key=700dbc624a2c34d84155d4538a76ba1a" class="download-btn w-100 d-block text-center">下载</a >
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="glass-card p-4 h-100">
+                <h5>伽卡他卡电子教室学生端</h5>
+                <p class="text-secondary small">显卡、声卡、网卡离线驱动包，断网也可安装驱动</p >
+                <div class="mt-auto pt-3">
+                    <a href="https://download.ihsdus.cn/down/2025down/8/7/netclassv17.8.exe?timestamp=6a67014a&auth_key=2ce4da657188f18a8b541bf2e7e88509" class="download-btn w-100 d-block text-center">下载</a >
+                </div>
+            </div>
+        </div>
+ <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="glass-card p-4 h-100">
+                <h5>微信电脑版</h5>
+                <p class="text-secondary small">聊天社交软件</p >
+                <div class="mt-auto pt-3">
+                    <a href="https://weixin.qq.com/" class="download-btn w-100 d-block text-center">下载</a >
+                </div>
+            </div>
+        </div>
+ <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="glass-card p-4 h-100">
+                <h5>QQ电脑版</h5>
+                <p class="text-secondary small">聊天社交软件，传文件</p >
+                <div class="mt-auto pt-3">
+                    <a href="https://im.qq.com" class="download-btn w-100 d-block text-center">下载</a >
+                </div>
+            </div>
+        </div>
+ <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="glass-card p-4 h-100">
+                <h5>抖音电脑版</h5>
+                <p class="text-secondary small">视频直播高清观看</p >
+                <div class="mt-auto pt-3">
+                    <a href="https://www.douyin.com/" class="download-btn w-100 d-block text-center">下载</a >
+                </div>
+            </div>
+        </div>
+ <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="glass-card p-4 h-100">
+                <h5>酷狗电脑版</h5>
+                <p class="text-secondary small">酷狗音乐 就是歌多</p >
+                <div class="mt-auto pt-3">
+                    <a href="https://pcpackagebssdlbigapk.cosama.cn/202607271502/d67d45c102a2cacdb9b8554ced91b04a/release_20141_x64.exe" class="download-btn w-100 d-block text-center">下载</a >
+                </div>
+            </div>
+        </div>
+ <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="glass-card p-4 h-100">
+                <h5>VMware Workstation虚拟机下载</h5>
+                <p class="text-secondary small">可以安装虚拟机，黑苹果也能装，密码xnj0</p >
+                <div class="mt-auto pt-3">
+                    <a href="https://1815468528.share.123pan.cn/123pan/PasiVv-yVkrv?notoken=1" class="download-btn w-100 d-block text-center">下载</a >
+                </div>
+            </div>
+        </div>
+
+
+
+<!-- 合作伙伴 -->
+<section id="tools" class="container mt-5">
+  <h3 class="fw-bold mb-4 blue-title"><i class="bi bi-windows me-2"></i>合作伙伴</h3>
+    <div class="row g-4">      
+    <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="glass-card p-4 h-100">
+                <h5>辰宝</h5>
+                <p class="text-secondary small">他是阿宏搞数码的助理</p >
+                <div class="mt-auto pt-3">
+                    <a href="https://xccb.mysxl.cn" class="download-btn w-100 d-block text-center">进入官网</a >
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="glass-card p-4 h-100">
+                <h5>阿陈搞数码</h5>
+                <p class="text-secondary small">喜欢搞数码的阿陈，淘机，回收，置换，找他</p >
+                <div class="mt-auto pt-3">
+                    <a href="****" class="download-btn w-100 d-block text-center">进入新官网</a >
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="glass-card p-4 h-100">
+                <h5>阿宏搞数码</h5>
+                <p class="text-secondary small">喜欢搞数码的阿宏，关注一下喽</p >
+                <div class="mt-auto pt-3">
+                    <a href="https://ahong.wiki/" class="download-btn w-100 d-block text-center">进入新官网</a >
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="glass-card p-4 h-100">
+                <h5>小卤君(阿炜搞数码)</h5>
+                <p class="text-secondary small">喜欢装机 喜欢研究ai 、 养虾、玩数码</p >
+                <div class="mt-auto pt-3">
+                    <a href="https://lujun-david.mysxl.cn/" class="download-btn w-100 d-block text-center">进入官网</a >
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="glass-card p-4 h-100">
+                <h5>破执</h5>
+                <p class="text-secondary small">喜欢搞数码的阿陈，淘机，回收，置换，找他</p >
+                <div class="mt-auto pt-3">
+                    <a href="https://pozisuma-cn.mysxl.cn/" class="download-btn w-100 d-block text-center">进入旧官网</a >
+                </div>
+            </div>
+        </div>
+<!-- 站点公告 -->
+<section id="notice" class="container mt-5">
+    <div class="glass-card p-4">
+        <h4 class="blue-title mb-3"><i class="bi bi-megaphone me-2"></i>站点公告</h4>
+        <ul class="text-secondary">
+            <li class="mb-2">1、本站所有系统资源均为原版镜像，去除捆绑软件，下载资源建议校验MD5哈希值，防止文件损坏</li>
+            <li class="mb-2">2、工具仅供个人学习使用，禁止商用倒卖本站资源，如需商用装机服务请联系工作室客服</li>
+            <li class="mb-2">3、链接失效可通过下方联系方式提交反馈，工作人员定期更新资源链接</li>
+        </ul>
+    </div>
+</section>
+
+<!-- 联系方式板块 -->
+<section id="contact" class="container mt-5 mb-5">
+    <h3 class="fw-bold mb-4 blue-title"><i class="bi bi-person-lines-fill me-2"></i>工作室联系渠道</h3>
+    <div class="glass-card p-5">
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <h5 class="mb-3">在线联系方式（自行修改下方内容）</h5>
+                <p class="mb-2"><i class="bi bi-qq text-primary me-2"></i>QQ：2562195288</p >
+                <p class="mb-2"><i class="bi bi-wechat text-success me-2"></i>微信：A13290857099</p >
+                <p class="mb-2"><i class="bi bi-telephone text-warning me-2"></i>联系电话：13290857099</p >
+                <p><i class="bi bi-envelope text-info me-2"></i>邮箱：waailindei@qq.com</p >
+            </div>
+            <div class="col-lg-6">
+                <h5 class="mb-3">业务范围</h5>
+                <ul class="text-secondary">
+                    <li>电脑远程重装系统、系统深度优化调试</li>
+                    <li>资源缺失链接补发、使用问题答疑</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 悬浮侧边客服按钮 -->
+<div class="float-contact">
+    <div class="float-btn" data-bs-toggle="modal" data-bs-target="#contactModal">
+        <i class="bi bi-chat-dots-fill"></i>
+    </div>
+</div>
+<!-- 弹窗客服弹窗 -->
+<div class="modal text-dark fade" id="contactModal" tabindex="-1">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">快速联系浩晨数码客服</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>QQ：3969567120</p >
+                <p>微信：waailindei</p >
+                <p>工作时间：每日 9:00~11:00  下午15:30~20:00</p >
+                <p>链接失效、资源缺失、业务定制均可留言反馈</p >
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 页脚底部 -->
+<footer class="footer-area py-5 mt-5">
+    <div class="container text-center">
+        <p class="text-secondary">©2026 浩晨数码工作室 版权所有 | 资源仅个人学习使用，禁止私自盗取</p >
+        <p class="text-secondary">闽ICP备2026549643号-1</p >
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// 平滑页面滚动
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+</body>
+</html>
